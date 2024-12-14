@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px; /* Added max width */
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: calc(100% - 22px);
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 0;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.filter-container {
+    margin: 10px 0;
+}
+
+#taskSummary {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+li {
+    background: #e9ecef;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+li.completed {
+    text-decoration: line-through;
+    background-color: #c3e6cb;
+}
+
+li button {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}

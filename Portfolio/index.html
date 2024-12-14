@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrutik Patil | Portfolio</title>
+    <!-- Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>SHRUTIK PATIL</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi, I'm Shrutik Patil, an aspiring Full Stack Developer with a passion for building web applications.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">HTML</div>
+                <div class="skill-card">CSS</div>
+                <div class="skill-card">JavaScript</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <!-- Projects Section -->
+<section id="projects" class="section">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project">
+                <img src="mypic.jpg" alt="Project 1 Screenshot" class="project-img">
+                <h3>Project 1</h3>
+                <p>Description of your first project. You can talk about what tech you used (HTML, CSS, JavaScript).</p>
+                <a href="https://link-to-live-project.com" class="project-link" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <img src="semantic-tags.png" alt="Project 2 Screenshot" class="project-img">
+                <h3>Project 2</h3>
+                <p>Description of your second project, along with technologies you used.</p>
+                <a href="https://link-to-live-project.com" class="project-link" target="_blank">View Project</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>You can reach me at: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+        </div>
+    </section>
+    <script>
+        const form = document.getElementById('contact-form');
+    
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+    
+            if (name && email && message) {
+                alert('Thank you, your message has been sent!');
+            } else {
+                alert('Please fill out all the fields.');
+            }
+        });
+    </script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>
